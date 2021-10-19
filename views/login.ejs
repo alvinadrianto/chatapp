@@ -1,0 +1,19 @@
+<h1 class="mt-5">Halaman Login</h1>
+
+<div class="row">
+  <div class="col-md-6">
+    <% if (message.length !== 0) { %>
+    <div class="alert alert-danger mt-3" role="alert"><%= message %></div>
+    <% } %> <% if (success.length !== 0 ) { %>
+    <div class="alert alert-success mt-3" role="alert"><%= success %></div>
+    <% } %>
+    <form action="/login" method="POST">
+      <label for="username" class="form-label">Username : </label>
+      <input type="text" name="username" id="username" class="form-control mb-3" placeholder="Input Username" required />
+      <label for="password" class="form-label">Password : </label>
+      <input type="password" name="password" id="password" class="form-control mb-3" placeholder="Input Password" required />
+      <button type="submit" class="btn btn-primary mb-2">Login</button>
+    </form>
+    <a href="/">Back to Home</a>
+  </div>
+</div>

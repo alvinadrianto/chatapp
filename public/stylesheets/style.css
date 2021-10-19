@@ -1,0 +1,17 @@
+body {
+  padding: 1rem;
+}
+
+#container-chat {
+  border: 1px solid black;
+  width: 300px;
+  height: 500px;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.chat-message {
+  padding: 0.5rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid black;
+}

@@ -1,0 +1,10 @@
+<div class="container-add-contact">
+  <% users.forEach(user => { %>
+  <div class="add-contact">
+    <h3><%= user.username %></h3>
+    <a href="/add/<%= user.username %> ">Add</a>
+  </div>
+  <% }) %>
+</div>
+
+<a href="/">Back to home</a>
